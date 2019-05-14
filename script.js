@@ -24,3 +24,16 @@ const quotes = [
         quote: "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do"
     }
 ]
+
+const quoteButton = document.querySelector(".colorBtn");
+const quoteAuthor = document.querySelector(".author");
+const quote = document.querySelector(".quote");
+
+
+quoteButton.addEventListener("click", displayQuote);
+
+function displayQuote() {
+    let number = Math.floor(Math.random() * quotes.length);
+    quote.innerHTML = quotes[number].quote;
+    quoteAuthor.innerHTML = quotes[number].name;
+}
