@@ -1,0 +1,26 @@
+body  {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #854386;
+    text-transform: capitalize;
+}
+
+.container{
+    text-align: center;
+    background: #fff;
+    padding: 70px;
+    flex: 0 60%;
+}
+
+.colorBtn{
+    border: 1px solid black;
+    padding: 12px 8px;
+    cursor: pointer;
+    outline: none;
+}
+.colorBtn:hover{
+    background: #854386;
+    color: #fff;
+}
